@@ -7,7 +7,6 @@ import app from "./routes";
 
 import { ILogger } from "./logger/ILogger";
 import { Logger } from "./logger/Logger";
-import bodyParser from "body-parser";
 
 const port = 8080; // default port to listen
 
@@ -18,8 +17,6 @@ const port = 8080; // default port to listen
 const logger: ILogger = new Logger();
 
 logger.info("Starting...");
-
-app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen( port, () => {
     logger.info( `server started at http://localhost:${ port }` );

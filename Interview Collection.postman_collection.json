@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Interview Collection",
+		"_postman_id": "90ca50c5-af03-83a1-47cc-cb7b0095ff60",
+		"description": "This is the collection for all the routes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://http://localhost:8080/api/accesses",
+			"request": {
+				"url": "http://localhost:8080/api/accesses/api/accesses",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"documentId\": \"123\",\n\t\"userId\": \"12\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://http://localhost:8080/api/accesses copy",
+			"request": {
+				"url": "http://localhost:8080/api/documents/123",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"documentId\": \"123\",\n\t\"userId\": \"12\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
