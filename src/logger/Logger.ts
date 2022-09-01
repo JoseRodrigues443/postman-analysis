@@ -8,7 +8,6 @@ export class Logger implements ILogger {
 
 	constructor(loggerName = 'logger_service') {
 		this._logger = new LogService({ name: loggerName });
-
 	}
 
 	info(message: string, params: unknown = '') {
